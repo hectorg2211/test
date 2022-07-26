@@ -16,7 +16,7 @@ import {HeaderFallback} from '~/components';
 import type {CountryCode} from '@shopify/hydrogen/storefront-api-types';
 import {DefaultSeo, NotFound} from '~/components/index.server';
 
-import {OkendoProvider} from '@okendo/shopify-hydrogen';
+// import {OkendoProvider} from '@okendo/shopify-hydrogen';
 
 function App({request}: HydrogenRouteProps) {
   const pathname = new URL(request.normalizedUrl).pathname;
