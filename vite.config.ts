@@ -5,7 +5,7 @@ import netlifyPlugin from '@netlify/hydrogen-platform/plugin';
 import okendo from '@okendo/shopify-hydrogen/plugin';
 
 export default defineConfig({
-  plugins: [hydrogen(), okendo(), netlifyPlugin()],
+  plugins: [hydrogen(), netlifyPlugin(), okendo()],
   resolve: {
     alias: [{find: /^~\/(.*)/, replacement: '/src/$1'}],
   },
