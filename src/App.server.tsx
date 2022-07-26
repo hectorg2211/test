@@ -28,7 +28,7 @@ function App({request}: HydrogenRouteProps) {
   return (
     <Suspense fallback={<HeaderFallback isHome={isHome} />}>
       <ShopifyProvider countryCode={countryCode}>
-        <OkendoProvider subscriberId="3134cd22-5f66-47a7-b511-7d1a8a171f6a" />
+        {/* <OkendoProvider subscriberId="3134cd22-5f66-47a7-b511-7d1a8a171f6a" /> */}
         <CartProvider countryCode={countryCode}>
           <Suspense>
             <DefaultSeo />
@@ -45,7 +45,8 @@ function App({request}: HydrogenRouteProps) {
         <ShopifyAnalytics />
       </ShopifyProvider>
     </Suspense>
-  );``
+  );
+  ``;
 }
 
 export default renderHydrogen(App);
